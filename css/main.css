@@ -144,7 +144,13 @@ nav.link a:hover {
     --input-border: #8b8a8b;
     --input-focus-h: 245;
     --input-focus-s: 100%;
-    --input-focus-1: 42%
+    --input-focus-1: 42%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .input {
@@ -154,4 +160,20 @@ nav.link a:hover {
     background-color: #ffffff;
     border: 2px solid var(--input-border);
     border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 180ms box-shadow ease-in-out;
+    display: grid;
+    place-content: center;
+    grid-gap: 0.5rem;
+    font-family: "Baloo 2", sans-serif;
+    background-color: #545960;
+    display: flex;
+}
+
+
+input[type="file"] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
 }
