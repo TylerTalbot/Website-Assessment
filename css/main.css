@@ -67,6 +67,7 @@ nav.link a:hover {
     color: rgb(105, 123, 123);
 }
 
+/* This peice of styling code for the cards was taken from an online source and adapted into the code */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
