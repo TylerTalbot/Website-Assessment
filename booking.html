@@ -18,15 +18,36 @@
             <a class="link" href="about.html">About</a> |
         </nav>
 
-<section class="inputs">
-    <label for="text-input">First Name</label>
-    <input class="input" id="text-input" type="text" />
+<section class="card-grid">
+  <div class="card">
+        <div class="card-content">
+        <section class="inputs">
+            <form class="booking-form" id="bookingForm">
+            <label for="text-input">Full Name</label>
+            <input class="input" id="text-input" type="text" />
 
-    <laber for="text-box">Last Name</label>
-    <input class="input" id="text-box" type="text" />
+            <laber for="text-box">Physical Address</label>
+            <input class="input" id="text-box" type="text" />
 
-    <label for="file-input">File Input</label>
-    <input id="file-input" class="input" type="file" />
+            <label for="file-input">Proof of address (eg copy of power bill)</label>
+            <input id="file-input" class="input" type="file" />
+            
+
+            <label for="file-input">ID (driver’s licence or passport)</label>
+            <input id="file-input" class="input" type="file" />
+
+            <a type="submit" class="submit-btn" href="https://outlook.office.com/mail/deeplink/compose?to=maungaclub%40maungaclub.maungaclub&amp;subject=Maunga%20Club%20membership%20application&amp;body=Full%20name%3A%0APhysical%20address%3A%0A%0AI%20will%20attach%20proof%20of%20address%20and%20proof%20of%20ID"_blank rel="noopener noreferrer"> Start membership email <span aria-hidden="true"></span> </a>
+ </a>
+    </form>
+</div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            this.reset();
+            alert('Form submitted and cleared successfully!');
+        });
+    </script>
 </section>
 
     <footer>

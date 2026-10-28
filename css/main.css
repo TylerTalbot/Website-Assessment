@@ -152,6 +152,13 @@ nav.link a:hover {
 *::after {
   box-sizing: border-box;
   text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.body .booking {
+    color: black;
+    font-weight: bold;
 }
 
 .input {
@@ -179,4 +186,21 @@ nav.link a:hover {
 input[type="file"] {
   font-size: 0.9em;
   padding-top: 0.35rem;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #02443f;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #012b28;
 }
