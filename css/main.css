@@ -6,7 +6,19 @@ header {
     background-color: #013632;
     text-align: center;
     z-index: 200;
+    justify-content: center;
+    align-items: center;
 }
+
+header img.header {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 
 nav.link {
     justify-content: center;
@@ -40,6 +52,16 @@ footer {
     left: 0;
     align-items: center;
     justify-content: center;
+}
+
+.footer-styling {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
 }
 
 header img {
@@ -216,4 +238,11 @@ input[type="file"] {
     padding: 40px 5%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+footer p {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 4px 0;
+    text-decoration-color: white;
 }
