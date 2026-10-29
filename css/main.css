@@ -105,6 +105,8 @@ nav.link a:hover {
     flex-direction: column;
     gap: 10px;
     flex-grow: 1;
+    height: auto;
+    width: auto;
 }
 
 .card-content h3 {
@@ -116,6 +118,12 @@ nav.link a:hover {
     color: #4b5563;
     font-size: 0.95rem;
     line-height: 1.4;
+}
+
+.card-content img {
+    height : 500px;
+    width: 500px;
+    align-self: center;
 }
 
 .card-btn {
